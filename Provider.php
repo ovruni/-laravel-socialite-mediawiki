@@ -14,11 +14,6 @@ class Provider extends AbstractProvider
      */
     public const IDENTIFIER = 'MEDIAWIKI';
 
-    /**
-     * {@inheritdoc}
-     */
-    protected $scopes = ['read_prefs'];
-
     protected function getMediawikiUrl()
     {
         return $this->getConfig('base_url');
