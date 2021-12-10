@@ -19,6 +19,14 @@ Please see the [Base Installation Guide](https://socialiteproviders.com/usage/),
 ],
 ```
 
+### Add base URL to `.env`
+
+Mediawiki may require you to autorize against a custom URL, which you may provide as the base URL.
+
+```bash
+MEDIAWIKI_BASE_URL=https://meta.wikimedia.org/w/rest.php
+```
+
 ### Add provider event listener
 
 Configure the package's listener to listen for `SocialiteWasCalled` events.
