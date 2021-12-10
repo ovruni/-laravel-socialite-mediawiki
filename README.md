@@ -14,7 +14,8 @@ Please see the [Base Installation Guide](https://socialiteproviders.com/usage/),
 'mediawiki' => [
   'client_id' => env('MEDIAWIKI_CLIENT_ID'),
   'client_secret' => env('MEDIAWIKI_CLIENT_SECRET'),
-  'redirect' => env('MEDIAWIKI_REDIRECT_URI')
+  'redirect' => env('MEDIAWIKI_REDIRECT_URI'),
+  'base_url' => env('MEDIAWIKI_BASE_URL')
 ],
 ```
 
