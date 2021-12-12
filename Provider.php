@@ -14,6 +14,11 @@ class Provider extends AbstractProvider
      */
     public const IDENTIFIER = 'MEDIAWIKI';
 
+    /**
+     * {@inheritdoc}
+     */
+    protected $usesPKCE = true;
+
     protected function getMediawikiUrl()
     {
         return $this->getConfig('base_url');
