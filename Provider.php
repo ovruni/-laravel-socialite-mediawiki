@@ -14,11 +14,6 @@ class Provider extends AbstractProvider
      */
     public const IDENTIFIER = 'MEDIAWIKI';
 
-    /**
-     * {@inheritdoc}
-     */
-    protected $usesPKCE = true;
-
     protected function getMediawikiUrl()
     {
         return $this->getConfig('base_url');
@@ -77,12 +72,12 @@ class Provider extends AbstractProvider
             'email'    => Arr::get($user, 'email', ''),
             'avatar'   => null,
 
-            'editcount' => $user['editcount'],
+            'editcount'       => $user['editcount'],
             'confirmed_email' => $user['confirmed_email'],
-            'blocked' => $user['blocked'],
-            'registered' => $user['registered'],
-            'groups' => $user['groups'],
-            'rights' => $user['rights'],
+            'blocked'         => $user['blocked'],
+            'registered'      => $user['registered'],
+            'groups'          => $user['groups'],
+            'rights'          => $user['rights'],
         ]);
     }
 }
