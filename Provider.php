@@ -71,13 +71,6 @@ class Provider extends AbstractProvider
             'name'     => Arr::get($user, 'realname', ''),
             'email'    => Arr::get($user, 'email', ''),
             'avatar'   => null,
-
-            'editcount'       => $user['editcount'],
-            'confirmed_email' => $user['confirmed_email'],
-            'blocked'         => $user['blocked'],
-            'registered'      => $user['registered'],
-            'groups'          => $user['groups'],
-            'rights'          => $user['rights'],
         ]);
     }
 }
